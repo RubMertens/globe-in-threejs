@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Look at the globe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        background-color: black;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      main {
+        display: flex;
+        height: 100vh;
+      }
+
+      main div {
+        width: 75%;
+      }
+
+      section {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        color: white;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 1.5em;
+        padding: 4px;
+        color: lightgrey;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index.9cbc6eb7.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.ce2910ae.js">
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>This is another three js project</h1>
+        <p>This time we learned a bit about shaders and glsl!</p>
+      </section>
+      <div id="globe-container">
+        <canvas id="globe"></canvas>
+      </div>
+    </main>
+    
+  </body>
+</html>
