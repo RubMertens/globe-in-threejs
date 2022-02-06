@@ -5,7 +5,7 @@ const config = {
   build: {
     outDir: './docs',
   },
-  base: '/docs/',
+  base: '/globe-in-threejs/',
 }
 
 export default config
