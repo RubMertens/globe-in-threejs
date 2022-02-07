@@ -24,6 +24,8 @@ import fragmentShader from './shaders/globe/fragment.glsl?raw'
 import atmoVertexShader from './shaders/atmosphere/vertex.glsl?raw'
 import atmoFragmentShader from './shaders/atmosphere/fragment.glsl?raw'
 
+import earthUrl from '../earth.jpg'
+
 const canvasContainer = document.getElementById('globe-container') as HTMLElement
 
 const scene = new Scene()
@@ -42,7 +44,7 @@ const basicMesh = new ShaderMaterial({
   fragmentShader,
   uniforms: {
     globeTexture: {
-      value: new TextureLoader().load('./earth.jpg'),
+      value: new TextureLoader().load(earthUrl),
     },
   },
 })
